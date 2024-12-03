@@ -1,12 +1,10 @@
-import CardList from './components/CardList/CardList'
-import { CardData } from './components/Card/CardData'
-
+import Navbar from './components/Header/Navbar'
 
 
 function App() {
   return (
     <div className="App">
-    <CardList cards={CardData}/>
+    <Navbar/>
     </div>
   );
 }
