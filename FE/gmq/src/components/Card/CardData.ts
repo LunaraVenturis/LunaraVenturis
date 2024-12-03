@@ -10,5 +10,5 @@ export const CardData = [
         id: 2,
         user: "Kis",
         image: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.donmai.us%2Foriginal%2Fa2%2Fb0%2Fa2b0a80cdfc9e85faeac47251511a953.jpg&f=1&nofb=1&ipt=b8afcb384640399fd9d843c12b2c0058bd9286ac2ddd3751dff6b6e18204beec&ipo=images"
-    }
+    },
 ]
