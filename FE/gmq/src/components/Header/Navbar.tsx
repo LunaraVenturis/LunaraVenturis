@@ -1,17 +1,17 @@
-import React from 'react';
 import './navbar.css';
-
-export default function Navbar(){
+export const Navbar = (): JSX.Element => {
     return(
         <nav className="nav">
-            <img src="/logoGAMEQUIZ.png" className='logoxD'alt="logo" />
+           <a href='/HomePage'>
+           <img src="/logoGAMEQUIZ.png" className='logoxD'alt="logo" />
+            </a> 
             <ul>
                 <li className='activeNav'>
-                    <a href="/leaderboards">LeaderBoards</a>
+                    <a href="/LeaderBoards">LeaderBoards</a>
                 </li>
 
                 <li className='activeNav'>
-                    <a href='/login'>Login</a>
+                    <a href='/Login'>Login</a>
                 </li>
             </ul>
         </nav>
