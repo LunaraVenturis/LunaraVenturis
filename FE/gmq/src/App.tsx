@@ -1,4 +1,5 @@
 import { Navbar } from './components/Header/Navbar'
+import { Footer } from './components/Footer/Footer'
 import { LeaderBoards } from './components/Pages/LeaderBoards';
 import { Login } from './components/Pages/Login';
 import { Home } from './components/Pages/HomePage';
@@ -21,6 +22,7 @@ function App() {
     <>
      <Navbar/>
      <Component/>
+     <Footer/>
     </>
    
   );
