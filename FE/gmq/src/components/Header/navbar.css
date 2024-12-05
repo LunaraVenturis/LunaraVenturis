@@ -3,6 +3,7 @@
 }
 .nav{
     background-color: blueviolet;
+    
     color: aliceblue;
     display: flex;
     justify-content: space-between;
