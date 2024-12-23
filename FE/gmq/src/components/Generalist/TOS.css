@@ -1,0 +1,13 @@
+.TOS{
+    margin-bottom: 62px;
+    background: url('./R.jpg') no-repeat;
+background-size: cover;
+color: aliceblue;
+background-position: center;
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

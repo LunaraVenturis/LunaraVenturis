@@ -1,25 +1,28 @@
-import React from 'react'
 import './Login.css'
-export const Login = (): JSX.Element => {
+export const Register = (): JSX.Element => {
     return(
         <div className='login-container'>
             <div className='loginWrp'>
             <form action="">
-                <h1>Login</h1>
+                <h1>Register</h1>
                 <div className='input-box'>
                     <input type="text" placeholder='Username' required />
                 </div>
                 <div className='input-box'>
+                    <input type="text" placeholder='Email' required />
+                </div>
+                <div className='input-box'>
                     <input type="password" placeholder='Password' required />
                 </div>
-               
-                <button type = "submit">Login</button>
-                <div className='register'>
-                    <p>Don't have an accout? <a href="/Register">Register</a></p> 
+                <div className='input-box'>
+                    <input type="password" placeholder='Confirm Password' required />
                 </div>
-                <div className='forgor'>
-                    <a href="/Login">Forgor password?</a>
+                <div className='rememberme'>
+                    <label><input type='checkbox'/>I agree to the terms of service</label>
                 </div>
+                <button type = "submit">Sign Up</button>
+                
+                
             </form>
    
         </div>
@@ -27,7 +30,7 @@ export const Login = (): JSX.Element => {
                 <h3>
                 GMQ is free and your account is private by default. We use your email address to connect you to your account.
 You must be at least 2 + 1 years old to create an account on GMQ.
-By continuing, you indicate that you have read and agree to GMQ's <a href="">Terms of Service</a> and <a href="">Privacy Policy</a>.
+By continuing, you indicate that you have read and agree to GMQ's <a href="/TOS">Terms of Service</a> and <a href="">Privacy Policy</a>.
                 </h3>
             </div>
         </div>
