@@ -6,34 +6,19 @@ import { Home } from './components/Pages/HomePage';
 import { Lobby } from './components/Pages/Lobby';
 import { Register } from './components/Pages/LoginForm/Register';
 import { TOS } from './components/Generalist/TOS';
+import {Routes, Route} from 'react-router-dom';
 function App() {
-  let Component;
-  switch (window.location.pathname){
-    case "/HomePage":
-      Component = Home;
-      break;
-    case "/Login":
-      Component = Login;
-      break;
-    case "/LeaderBoards":
-      Component = LeaderBoards;
-      break;
-    case "/Lobby":
-      Component = Lobby;
-      break;
-    case "/Register":
-      Component = Register;
-      break;
-      case "/TOS":
-        Component = TOS;
-        break;
-      default :
-      Component = Home;
-  }
   return (
     <>
      <Navbar/>
-     <Component/>
+     <Routes>
+      <Route path='/' element={<Home />} />
+      <Route path='/register' element={<Register />} />
+      <Route path='/login' element={<Login />} />
+      <Route path='/leaderboards' element={<LeaderBoards />} />
+      <Route path='/lobby' element={<Lobby />} />
+      <Route path='/tos' element={<TOS />} />
+     </Routes>
      <Footer/>
     </>
    

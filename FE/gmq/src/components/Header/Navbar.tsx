@@ -1,17 +1,17 @@
+import { Link } from 'react-router-dom';
 import './navbar.css';
 export const Navbar = (): JSX.Element => {
     return(
         <nav className="nav">
-           <a href='/HomePage'>
+           <Link to='/'>
            <img src="/logoGAMEQUIZ.png" className='logoxD'alt="logo" />
-            </a> 
+            </Link> 
             <ul>
                 <li className='activeNav'>
-                    <a href="/LeaderBoards">LeaderBoards</a>
+                    <Link to="leaderboards">LeaderBoards</Link>
                 </li>
-
                 <li className='activeNav'>
-                    <a href='/Login'>Login</a>
+                    <Link to='/login'>Login</Link>
                 </li>
             </ul>
         </nav>
