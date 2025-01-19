@@ -1,14 +1,15 @@
 import  Express  from "express";
-const App = Express();
+const app = Express();
 const port = 6969;
+import authRoutes from '../Routes/authRoutes';
 
-App.get('/', (req, res) => {
+app.get('/', (req, res) => {
     res.send('Express + TypeScript Server');
   });
   
-
+app.use('/', authRoutes);
   
-  App.listen(port, () => {
+  app.listen(port, () => {
     console.log(`[server]: Server is running at http://localhost:${port}`);
   });
   

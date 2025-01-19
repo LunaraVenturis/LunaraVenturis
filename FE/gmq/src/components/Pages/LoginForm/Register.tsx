@@ -1,9 +1,23 @@
-import './Login.css'
+import './Login.css'; 
+import { useState } from 'react';
 export const Register = (): JSX.Element => {
+
+    const [data, setData] = useState ({
+            name: '',
+            email: '',
+            password: '',
+        })
+
+    const registerUser = (e : React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        
+    }
+
     return(
+        
         <div className='login-container'>
             <div className='loginWrp'>
-            <form action="">
+            <form action="" onSubmit={registerUser}>
                 <h1>Register</h1>
                 <div className='input-box'>
                     <input type="text" placeholder='Username' required />

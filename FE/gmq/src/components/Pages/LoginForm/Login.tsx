@@ -1,10 +1,20 @@
 import React from 'react'
 import './Login.css'
+import { useState } from "react";
+import axios from 'axios';
 export const Login = (): JSX.Element => {
+    const [data, setData] = useState ({
+        name: '',
+        password: '',
+    })
+    const loginUser = async (e: React.FormEvent<HTMLFormElement>)=> {
+        e.preventDefault();
+      
+    }
     return(
         <div className='login-container'>
             <div className='loginWrp'>
-            <form action="">
+            <form action="" onSubmit={loginUser}>
                 <h1>Login</h1>
                 <div className='input-box'>
                     <input type="text" placeholder='Username' required />
